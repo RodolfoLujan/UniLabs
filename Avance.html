@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Horizontal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Labs</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Labs</a></li>
+                <li><a href="#">Ejemplo</a></li>
+                <li><a href="#">Index</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <header>
+            <h1>Ejemplo</h1>
+            <button id="toggle-theme">Toggle Theme</button>
+        </header>
+        
+        <div class="content">
+            <div class="panel">
+                <h2>Ejemplo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hernandez Juan</td>
+                            <td>
+                                <button class="view-btn">👁️ Ver</button>
+                                <button class="edit-btn">✏️ Editar</button>
+                                <button class="delete-btn">🗑️ Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Agustin Alberto</td>
+                            <td>
+                                <button class="view-btn">👁️ Ver</button>
+                                <button class="edit-btn">✏️ Editar</button>
+                                <button class="delete-btn">🗑️ Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #1e1e2d;
+    --text-color: #ffffff;
+    --panel-bg: #27293d;
+    --button-bg: #4e5f7a;
+    --highlight-color: #677db7;
+}
+
+body {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección a horizontal */
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh; /* Hace que la barra lateral ocupe toda la altura de la ventana */
+    padding: 20px;
+    background-color: var(--panel-bg);
+}
+
+.sidebar h2 {
+    color: var(--highlight-color);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Permite organizar el contenido verticalmente dentro de main-content */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--highlight-color);
+}
+
+header button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contenido de la página */
+.content .panel {
+    background-color: var(--panel-bg);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.new-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: var(--highlight-color);
+    border: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.edit-btn, .view-btn, .delete-btn {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--panel-bg);
+    color: var(--text-color);
+    width: 100%;
+}
